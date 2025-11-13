@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header {
+    background-color: #073b4c;
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffd166;
+}
+
+.image-strip {
+    display: flex;
+    gap: 4px;
+    height: 80px;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.bar {
+    background-image: url('../img/yosemite.jpg');
+    background-size: 500% 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 100%;
+    flex: 1;
+}
+
+.bar1 { background-position-x: 0%; }
+.bar2 { background-position-x: 20%; }
+.bar3 { background-position-x: 40%; }
+.bar4 { background-position-x: 60%; }
+.bar5 { background-position-x: 80%; }
+
+.welcome-text {
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-size: 3em;
+    font-family: 'Courier New', monospace;
+}
+
+.welcome-text p {
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex: 1;
+    min-width: 200px;
+}
+
+.large-image {
+    flex: 2;
+    min-width: 300px;
+}
+.small-images img,
+.large-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.text-section {
+    padding: 2em;
+}
+
+.text-section h2 {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.text-section h3 {
+    font-weight: normal;
+    margin-bottom: 1em;
+}
+
+.text-section p {
+    max-width: 800px;
+}
+
+.footer {
+    background-color: #b7e4c7;
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
